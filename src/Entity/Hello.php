@@ -5,7 +5,7 @@ namespace Migueabellan\HelloBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="Migueabellan\HelloBundle\Entity\HelloRepository")
+ * @ORM\Entity(repositoryClass="Migueabellan\HelloBundle\Repository\HelloRepository")
  */
 class Hello
 {

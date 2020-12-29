@@ -1,6 +1,6 @@
 <?php
 
-namespace Migueabellan\HelloBundle\Entity;
+namespace Migueabellan\HelloBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
