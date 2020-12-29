@@ -1,0 +1,33 @@
+{
+    "name": "migueabellan/hello-bundle",
+    "description": "Hello world bundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Miguel Ángel Abellán",
+            "email": "info@migueabellan.es"
+        }
+    ],
+    "require": {
+        "php": ">=7.2 || >=8.0",
+        "ext-ctype": "*",
+        "ext-iconv": "*",
+        "symfony/framework-bundle": "5.2.*"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Migueabellan\\HelloBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Migueabellan\\HelloBundle\\Tests\\": "tests/"
+        }
+    }
+}
