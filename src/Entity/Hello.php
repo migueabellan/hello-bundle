@@ -10,35 +10,35 @@ use Doctrine\ORM\Mapping as ORM;
 class Hello
 {
     /**
-     * @var integer
+     * @var int
      *
-     * @ORM\Column(name="id", type="integer")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\GeneratedValue
+     * @ORM\Column(type="integer")
      */
     private $id;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length="255")
+     * @ORM\Column(type="string", length=255)
      */
     private $name;
 
-    public function getId()
+    public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function setName($name)
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): self
     {
         $this->name = $name;
 
         return $this;
-    }
-
-    public function getName()
-    {
-        return $this->name;
     }
 }
