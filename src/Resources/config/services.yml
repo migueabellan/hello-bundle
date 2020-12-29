@@ -1,0 +1,6 @@
+services:
+    Migueabellan\HelloBundle\Entity\:
+        resource: '../../Entity/*Repository.php'
+        autoconfigure: true
+        autowire: true
+        tags: ['doctrine.repository_service']

@@ -2,9 +2,15 @@
 
 namespace Migueabellan\HelloBundle\Entity;
 
-use Doctrine\ORM\EntityRepository;
+use Migueabellan\HelloBundle\Entity\Hello;
 
-class CronJobRepository extends EntityRepository
+use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\Common\Persistence\ManagerRegistry;
+
+class HelloRepository extends ServiceEntityRepository
 {
-    
+    public function __construct(ManagerRegistry $registry)
+    {
+        parent::__construct($registry, Hello::class);
+    }
 }
